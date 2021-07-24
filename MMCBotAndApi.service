@@ -1,0 +1,10 @@
+[Unit]
+Description=MMCBotAndApi Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/BOTRepo/venv/bin/python /home/ubuntu/BOTRepo/main.py
+
+[Install]
+WantedBy=multi-user.target
